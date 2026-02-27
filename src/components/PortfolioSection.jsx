@@ -84,7 +84,7 @@ export default function PortfolioSection() {
         </div>       
 
         <div className="portfolio__more">
-          <a href="/personalwebsite/projetos" className="portfolio__moreBtn">
+          <a href="/projetos" className="portfolio__moreBtn">
             Veja mais projetos
           </a>
         </div>
