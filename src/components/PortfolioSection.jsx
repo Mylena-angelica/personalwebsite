@@ -1,8 +1,7 @@
-// src/components/PortfolioSection.jsx
 import "../styles/portfolioSection.css";
 import { Link } from "react-router-dom";
 
-// importe cada imagem da pasta src/img (do jeito certo no CRA/Vite)
+// Importe cada imagem da pasta src/img (padrão React)
 import solarBanyuImg from "../img/SolarBanyuHome.png";
 import eraImg from "../img/EraHome.png";
 import recrutamenoImg from "../img/RecrutamentoHome.png";
@@ -71,24 +70,25 @@ export default function PortfolioSection() {
                   <p className="pCard__meta">{p.subtitle}</p>
                 </div>
 
-                <a
+                {/* CORREÇÃO: Usando o componente Link para navegação interna */}
+                <Link
                   className="pCard__more"
                   to={p.path}
                   aria-label={`Ver mais sobre ${p.title}`}
                   title="Ver mais"
                 >
                   ↗
-                </a>
+                </Link>
               </div>
             </article>
           ))}
         </div>       
 
-      <div className="portfolio__more">
-        <Link to="/projetos" className="portfolio__moreBtn">
-          Veja mais projetos
-        </Link>
-      </div>
+        <div className="portfolio__more">
+          <Link to="/projetos" className="portfolio__moreBtn">
+            Veja mais projetos
+          </Link>
+        </div>
       </div>
     </section>
   );
