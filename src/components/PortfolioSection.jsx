@@ -1,5 +1,6 @@
 // src/components/PortfolioSection.jsx
 import "../styles/portfolioSection.css";
+import { Link } from "react-router-dom";
 
 // importe cada imagem da pasta src/img (do jeito certo no CRA/Vite)
 import solarBanyuImg from "../img/SolarBanyuHome.png";
@@ -83,11 +84,11 @@ export default function PortfolioSection() {
           ))}
         </div>       
 
-        <div className="portfolio__more">
-          <a href="/projetos" className="portfolio__moreBtn">
-            Veja mais projetos
-          </a>
-        </div>
+      <div className="portfolio__more">
+        <Link to="/projetos" className="portfolio__moreBtn">
+          Veja mais projetos
+        </Link>
+      </div>
       </div>
     </section>
   );
