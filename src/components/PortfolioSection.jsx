@@ -14,37 +14,37 @@ const PROJECTS = [
     title: "SolarBanyu",
     subtitle: "IoT / Sustentabilidade / Multidisciplinar",
     image: solarBanyuImg,
-    path: "/portifolio",
+    path: "/personalwebsite/projetos",
   },
   {
     title: "Apita Cidadão",
     subtitle: " Acesso à informação / GovTech",
     image: apitaImg,
-    path: "/portifolio",
+    path: "/personalwebsite/projetos",
   },
   {
     title: "Recrutamento inteligente",
     subtitle: "Web Design / SaaS",
     image: recrutamenoImg,
-    path: "/portifolio",
+    path: "/personalwebsite/projetos",
   },
   {
     title: "Website de Imobiliária",
     subtitle: "Web Design / Real State",
     image: imobiliariaImg,
-    path: "/portifolio",
+    path: "/personalwebsite/projetos",
   },
   {
     title: "Fintech de saúde",
     subtitle: "UI|UX / Product Design",
     image: fintechImg,
-    path: "/portifolio",
+    path: "/personalwebsite/projetos",
   },
   {
     title: "Sustentabilidade no canteiro de obras",
     subtitle: "Dados / Sustentabilidade Digital / Obras",
     image: eraImg,
-    path: "/portifolio",
+    path: "/personalwebsite/projetos",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function PortfolioSection() {
         </div>       
 
         <div className="portfolio__more">
-          <a href="/portifolio" className="portfolio__moreBtn">
+          <a href="/personalwebsite/projetos" className="portfolio__moreBtn">
             Veja mais projetos
           </a>
         </div>
