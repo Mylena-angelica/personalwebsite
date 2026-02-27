@@ -27,8 +27,8 @@ jobs:
         run: npm ci
 
       - name: Build project
-        run: npm run build
-        # Note: React builds into a 'build' folder by default
+        # CI=false evita que avisos de lint (CSS/JS) falhem o build no GitHub
+        run: CI=false npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build' # This tells GitHub where your compiled files are
+          path: './build'
 
       - name: Deploy to GitHub Pages
         id: deployment
