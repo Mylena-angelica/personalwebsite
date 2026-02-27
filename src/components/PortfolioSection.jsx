@@ -73,7 +73,7 @@ export default function PortfolioSection() {
 
                 <a
                   className="pCard__more"
-                  href={p.path}
+                  to={p.path}
                   aria-label={`Ver mais sobre ${p.title}`}
                   title="Ver mais"
                 >
