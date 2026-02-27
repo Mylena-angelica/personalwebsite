@@ -85,7 +85,7 @@ export default function PortfolioSection() {
         </div>       
 
       <div className="portfolio__more">
-        <Link to="/projetos" className="portfolio__moreBtn">
+        <Link to="personalwebsite/projetos" className="portfolio__moreBtn">
           Veja mais projetos
         </Link>
       </div>
