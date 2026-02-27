@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import heroImg from "../img/hero.png";
 
 export default function Hero() {
   return (
@@ -30,7 +31,7 @@ export default function Hero() {
         <div className="hero__right" aria-hidden="true">
 
           <div className="hero__imgWrap">
-            <img className="hero__img" src="/img/hero.png" alt="" />
+            <img className="hero__img" src={heroImg} alt="Mylena" />
           </div>
           
             <span />
