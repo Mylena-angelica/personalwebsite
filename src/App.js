@@ -10,7 +10,7 @@ import Contato from "./pages/contato";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/personalwebsite">
       <Header />
 
       <Routes>
