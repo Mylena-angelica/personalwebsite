@@ -1,5 +1,7 @@
 import "../styles/home.css";
 import heroImg from "../img/hero.png";
+import { Link } from "react-router-dom";
+const cvUrl = `${import.meta.env.BASE_URL}Mylena-Angelica-cv.pdf`;
 
 export default function Hero() {
   return (
@@ -19,14 +21,18 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions">
-            <a className="btn btn--primary" href="/curriculo">
+            <a
+              className="btn btn--primary"
+              href={cvUrl}
+              download="Mylena-Angelica-cv.pdf"
+            >
               Baixar CV
             </a>
-            <a className="btn btn--ghost" href="/portifolio">
-              Portifólio
-            </a>
+            <Link to="/projetos" className="btn btn--ghost">
+            Projetos
+          </Link>
           </div>
-        </div>
+        </div>     
 
         <div className="hero__right" aria-hidden="true">
 
